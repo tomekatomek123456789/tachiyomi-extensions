@@ -1,0 +1,18 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+
+ext {
+    extName = 'MangaSkanlacje PL'
+    pkgNameSuffix = 'pl.mangaskanlacje'
+    extClass = '.MangaSkanlacjeCMSSources'
+    extVersionCode = 1
+    libVersion = '1.2'
+	containsNsfw = 'true'
+}
+
+dependencies {
+    compileOnly 'com.google.code.gson:gson:2.8.6'
+    compileOnly 'com.github.salomonbrys.kotson:kotson:2.5.0'
+}
+
+apply from: "$rootDir/common.gradle"
